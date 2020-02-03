@@ -33,6 +33,27 @@ See [https://creativecommons.org/licenses/by/3.0/][ccl] for more details.
 The following Google style guides live outside of this project:
 [Go Code Review Comments][go] and [Effective Dart][dart].
 
+
+### 定制 Java Code Style
+
+为了保留 IDE 部分常用的风格, 进行了部分定制。
+
+#### IntelliJ-IDEA 定制
+
+修改 `intellij-java-google-style.xml` 中的内容:
+
+|项|原始取值|定制之后|定制时间|备注|
+|:----|:----|:----|:----|:----|
+|`INDENT_SIZE`| 2 | 4 |20200201|行缩进|
+|`TAB_SIZE`| 2 | 4 |20200201|TAB 缩进|
+|`CONTINUATION_INDENT_SIZE`| 2 or 4 | 8 |20200201|换行缩进|
+|`RIGHT_MARGIN`| 100 | 120 |20200201|单行长度|
+|`JD_PRESERVE_LINE_FEEDS`| 无 | true |20200201|保留代码注释中的手动换行|
+|`KEEP_LINE_BREAKS`| 无 | true |20200201|保留Java代码中的手动换行|
+
+
+
+
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
 [cpp]: https://google.github.io/styleguide/cppguide.html
